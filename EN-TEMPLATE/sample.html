@@ -16,18 +16,20 @@
         </xml>
     </noscript>
     <![endif]-->
-	<style type="text/css">
-		table, td, div, p {
+	<style type="text/css">table, td, div, p {
             font-family: Verdana, Arial, sans-serif;
             font-size: 14.5px;
         }
 		h1 { font-size 26px; font-weight:bold; }
-        a{ font-weight: 700; color: #F26722; }
+        a{
+            font-weight: 700;
+            color: #F26722; 
+        }
 	</style>
 </head>
 <body data-gramm="false" style="margin:0;padding:0;word-spacing:normal;background-color:#DDDDDD;">
 <div aria-roledescription="email" lang="en" role="article" style="text-size-adjust:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;background-color:#DDDDDD;">
-<table role="presentation" style="max-width:600px;border:none;border-spacing:0;margin:0 auto; background-color:#FFFFFF;"> <!-- Changed this to max-width600px and added style for centering -->
+<table role="presentation" style="max-width:600px;border:none;border-spacing:0;margin: 0 auto">
 	<tbody>
 		<tr>
 			<td align="center" style="padding:0;"><!--[if mso]>
@@ -47,11 +49,42 @@
                                         </td>-->
 					<tr>
 						<td style="padding:20px;background-color:#FFFFFF;">
-						<h1 style="margin-top: 0px; margin-bottom: 16px; font-size: 26px; line-height: 32px; font-weight: bold; letter-spacing: -0.02em;">Libero ultricies ipsum!</h1>
+						<p>Thank you, {user_data~First Name}!</p>
 
-						<p style="margin:0;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempus adipiscing felis, sit amet blandit ipsum volutpat sed. Morbi porttitor, <a href="http://www.example.com/" style="text-decoration:underline; font-weight: 700; color: #F26722;">eget accumsan dictum</a>, nisi libero ultricies ipsum, in posuere mauris neque at erat.</p>
+						<p>Your generous monthly donation of {receipt_data~amount~[en1]}will help Shatterproof save lives, change laws, end stigma, and revolutionize the treatment system. Your gift gives those struggling with the disease of addiction hope and support, and for that we are so grateful. Together we are stronger than addiction.</p>
 
-						<p>Mauris ac turpis et turpis ultricies iaculis eget quis nibh. Ut ut mi ac lectus porttitor scelerisque ut sed sem. Aliquam tortor ex, egestas vitae porttitor non, aliquam vitae magna. Nulla quis odio eget massa cursus blandit vitae nec nulla. Donec luctus rutrum augue vitae congue. Suspendisse cursus sapien ut porttitor pellentesque. Nam porta et metus non feugiat. Aenean purus sapien, auctor quis justo id, molestie venenatis tortor. Nam urna ipsum, dignissim mattis purus ut, finibus consectetur nulla.</p>
+						<p>Learn more and get involved at&nbsp;<strong><a href="http://www.shatterproof.org/" style="font-weight: 700; color: #F26722;">shatterproof.org</a></strong>.</p>
+
+						<p>With gratitude,</p>
+
+						<p>Gary Mendell</p>
+
+						<p>Founder, Shatterproof</p>
+
+						<hr style="height:1px; border-width:0; color:#666666; background-color:#666666" />
+						<p>To comply with IRS regulations regarding charitable donations, we affirm that no goods or services have been provided to you in consideration of your gift.</p>
+
+						<p>Shatterproof is a qualified 501(c)(3) tax-exempt organization and donations are tax-deductible to the full extent of the law. Please consult your tax advisor regarding specific questions about your deductions. Please print or save this message for your personal records.</p>
+
+						<p>501(c)(3) Tax ID Number: 45-4619712</p>
+
+						<p>Date: {receipt_data~createdOn~[dd/MM/yyyy]}</p>
+
+						<p>Donation Amount: {receipt_data~amount~[en1]}</p>
+
+						<p>Credit Card: {receipt_data~paymentType} xxxxxxxxxx{receipt_data~ccLastFour}, exp: {receipt_data~expiry}</p>
+
+						<p>Billing Information:</p>
+
+						<p>{user_data~First Name~Donor}</p>
+
+						<p>{user_data~Last Name}</p>
+
+						<p>{user_data~Address 1}</p>
+
+						<p>{user_data~City}, {user_data~State} {user_data~Zipcode}</p>
+
+						<p>{user_data~Email Address}</p>
 						</td>
 					</tr>
 					<tr>
@@ -72,9 +105,9 @@
 					<tr>
 						<td style="padding:0px;text-align:center;font-size:12px;background-color:#DDDDDD;color:#666666">
 						<p style="line-height:14px;font-size:10px;"><span style="font-weight:700;">Shatterproof</span><br />
-						101 Merritt 7 Corporate Park, 1st Floor, Norwalk, CT, 06851, US<br />
-						Business Hours: Monday-Friday 9 a.m.&-5 p.m. EST.<br />
-                        1-800-597-2557</p>
+						<span style="color: rgb(102, 102, 102); font-family: Verdana, Arial, sans-serif; font-size: 10px; text-align: center;">101 Merritt 7 Corporate Park, 1st Floor, Norwalk, CT, 06851, US</span><br style="color: rgb(102, 102, 102); font-family: Verdana, Arial, sans-serif; font-size: 10px; text-align: center;" />
+						<span style="color: rgb(102, 102, 102); font-family: Verdana, Arial, sans-serif; font-size: 10px; text-align: center;">Business Hours: Monday-Friday 9 a.m.&amp;-5 p.m. EST.</span><br style="color: rgb(102, 102, 102); font-family: Verdana, Arial, sans-serif; font-size: 10px; text-align: center;" />
+						<span style="color: rgb(102, 102, 102); font-family: Verdana, Arial, sans-serif; font-size: 10px; text-align: center;">1-800-597-2557</span></p>
 						</td>
 					</tr>
 				</tbody>
